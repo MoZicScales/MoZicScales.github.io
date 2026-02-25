@@ -82,10 +82,15 @@ function init() {
 
     document.getElementById('current-year').textContent = new Date().getFullYear();
 }
+document.addEventListener("DOMContentLoaded", function() {
+  init();
+});
 
-init();
-
-// Mobile Menu Toggle
 const btn = document.getElementById('mobile-menu-button');
 const menu = document.getElementById('mobile-menu');
-btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+if (btn && menu) {
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+}
