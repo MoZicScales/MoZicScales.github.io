@@ -1,0 +1,65 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<div class="ambient-light bg-primary-500 w-96 h-96 -top-48 -left-48"></div>
+<div class="ambient-light bg-primary-700 w-80 h-80 bottom-1/4 -right-40"></div>
+
+<header class="sticky top-0 z-50 bg-dark/90 backdrop-blur-sm border-b border-gray-800">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-primary-500 to-primary-700 animate-pulse-glow"></div>
+            <a href="#hero" class="text-2xl font-bold bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">MoZicScales</a>
+        </div>
+        <ul id="nav-list" class="hidden md:flex space-x-8"></ul>
+        <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-primary-400">
+            <i class="fas fa-bars text-xl"></i>
+        </button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-900 border-t border-gray-800 px-4 py-6">
+        <ul id="mobile-nav-list" class="space-y-4"></ul>
+    </div>
+</header>
+
+<main>
+    <section id="hero" class="container mx-auto px-4 py-16 md:py-24 text-center relative">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Scale Your <span class="bg-gradient-to-r from-primary-400 to-purple-300 bg-clip-text text-transparent">Freelance Brand</span> with Precision
+            </h1>
+            <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                Founded by two young entrepreneurs who turned side hustles into empires. We provide the strategy, tools, and community to amplify your freelance presence.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#pricing" class="px-8 py-3 bg-gradient-to-r from-primary-600 to-primary-700 rounded-full font-semibold hover:from-primary-700 hover:to-primary-800 transition-all shadow-lg hover:shadow-primary-500/30">View Courses</a>
+                <a href="#story" class="px-8 py-3 border border-primary-500 text-primary-300 rounded-full font-semibold hover:bg-primary-500/10 transition-all">Our Story</a>
+            </div>
+        </div>
+        <div class="mt-20 relative">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-transparent z-10"></div>
+            <img src="https://picsum.photos/1200/500?random=1" alt="Freelancers" class="w-full rounded-2xl shadow-2xl opacity-80">
+        </div>
+    </section>
+
+    <section id="story" class="container mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">The Minds Behind The <span class="text-primary-400">MoZic</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Two friends, one vision: democratizing brand growth for every independent creator.</p>
+        </div>
+        <div id="founders-container" class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"></div>
+    </section>
+
+    <section id="pricing" class="container mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Choose Your <span class="text-primary-400">Scaling</span> Path</h2>
+        </div>
+        <div id="pricing-cards-container" class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto"></div>
+    </section>
+
+    <section class="bg-gradient-to-b from-gray-900/50 to-dark border-y border-gray-800 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">What's Inside <span class="text-primary-400">Every</span> Course</h2>
+            <div id="features-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+        </div>
+    </section>
+</main>
